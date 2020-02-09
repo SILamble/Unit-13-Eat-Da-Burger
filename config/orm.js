@@ -3,10 +3,10 @@ const connection = require("../config/connection.js");
 
 // Object for all our SQL statement functions.
 const orm = {
-    //table name will be passed into function ("tableInput" argument) via the burger.js file
-  all: function(tableInput, cb) {
+  //table name will be passed into function ("tableInput" argument) via the burger.js file
+  all: function (tableInput, cb) {
     const queryString = "SELECT * FROM " + tableInput + ";";
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
@@ -14,7 +14,8 @@ const orm = {
     });
   },
   //Arguments passed to function complete query string "INSERT INTO (name) VALUES ("new burger name")
-  create: function(table, name, nameText, cb) {
+  create: function (table, name, nameText, cb) {
+    //use "let" as variable is not a constant
     let queryString = "INSERT INTO " + table;
 
     queryString += " (";
@@ -26,7 +27,7 @@ const orm = {
 
     console.log(queryString);
 
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
@@ -34,8 +35,9 @@ const orm = {
       cb(result);
     });
   },
-  // An example of a MySQL line would be "UPDATE burgers SET ? WHERE ?". Here updateVal will be the devoured column, and condition will be the burger id to be updated
-  update: function(table, updateVal, val, condition, cb) {
+  // Example SQL Syntax required to update // UPDATE burgers SET devoured = true WHERE id = 7
+  update: function (table, updateVal, val, condition, cb) {
+    //use "let" as variable is not a constant
     let queryString = "UPDATE " + table;
 
     queryString += " SET ";
@@ -46,7 +48,7 @@ const orm = {
     queryString += condition;
 
     console.log(queryString);
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
@@ -57,5 +59,5 @@ const orm = {
 
 };
 
-// UPDATE burgers SET devoured = true WHERE id = 7
+
 module.exports = orm;

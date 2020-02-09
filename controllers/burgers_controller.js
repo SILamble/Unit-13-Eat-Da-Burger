@@ -4,11 +4,11 @@ const router = express.Router();
 
 const burger = require("../models/burger.js");
 
-//functions for burger object created in models folder
+//Different routes invoke different burger functions
 
 //get all burgers from database (see model for "all" function)
-router.get("/", function(req, res) {
-  burger.all(function(data) {
+router.get("/", function (req, res) {
+  burger.all(function (data) {
     const hbsObject = {
       burgers: data
     };
@@ -18,19 +18,18 @@ router.get("/", function(req, res) {
 });
 
 //Create a new burger, post to database (see model for "create" function)
-router.post("/api/burgers", function(req, res) {
-  burger.create(req.body, function(result)
-   {
+router.post("/api/burgers", function (req, res) {
+  burger.create(req.body, function (result) {
     res.json({ id: result.insertId });
   }); console.log(req.body);
 });
 
 //Update a burger to be devoured (see model for "update" function)
-router.put("/api/burgers/:id", function(req, res) {
+router.put("/api/burgers/:id", function (req, res) {
   const condition = "id = " + req.params.id;
   const val = "true";
   console.log(val)
-  burger.update(val, condition, function(result) {
+  burger.update(val, condition, function (result) {
     if (result.changedRows == 0) {
       return res.status(404).end();
     } else {

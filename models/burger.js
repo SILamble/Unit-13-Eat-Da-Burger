@@ -1,5 +1,7 @@
 const orm = require("../config/orm.js");
 
+// ORM functions added to the burger object
+
 const burger = {
     //display all function
     all: function (cb) {

@@ -53,5 +53,5 @@ NPM Installs
 
 ## Links
 
-GitHub Repo:
+GitHub Repo: https://github.com/SILamble/Unit-13-Eat-Da-Burger
 Heroku:

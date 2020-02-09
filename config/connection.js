@@ -1,5 +1,7 @@
 const mysql = require("mysql");
 
+
+//connection to sql - INSERT YOUR OWN PASSWORD HERE
 const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,

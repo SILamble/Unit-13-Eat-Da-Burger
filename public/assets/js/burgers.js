@@ -1,3 +1,5 @@
+// JQuery event handlers for creating and updating burgers
+
 $(function() {
     $(".devour").on("click", function(event) {
       const id = $(this).data("id");
