@@ -1,3 +1,74 @@
 body {
-    background-color: yellow;
+    background-color: rgb(207, 149, 41);
   }
+
+.submit {
+  background-color: darkblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.burgerName {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+h1 {
+  font-family: Arial;
+  font-weight: bold;
+  
+}
+
+h2 {
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 30px
+}
+.column2 {
+  float: left;
+  width:30%;
+  padding: 50px
+}
+.column3 {
+  float: left;
+  width: 25%;
+  padding: 30px
+}.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bgImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.title{
+text-align: center;
+}

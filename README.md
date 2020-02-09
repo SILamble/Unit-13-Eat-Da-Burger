@@ -16,6 +16,21 @@ Users can input burger details on screen, the burgers will be displayed on scree
 
 App is fully deployed to Heroku, user builds burgers from list of ingredients and the name is assigned to it automatically based on ingredients.
 
+## Screen Shots
+
+Home page
+![Home page](/public/img/Capture001.png)
+
+Enter a burger
+![Enter a burger name](/public/img/Capture002.png)
+
+Burger appears on the "to devour list"
+![Burgers listed for eating](/public/img/Capture003.png)
+
+Clicking on "Devour" moves teh burger to the "Devoured" list
+![Devoured burgers](/public/img/Capture004.png)
+
+
 ## Process
 
 * Set up folder directory
