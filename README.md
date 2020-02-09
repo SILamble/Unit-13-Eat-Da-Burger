@@ -19,16 +19,16 @@ App is fully deployed to Heroku, user builds burgers from list of ingredients an
 ## Screen Shots
 
 Home page
-![Capture001](https://user-images.githubusercontent.com/55810138/74109643-0b409b00-4b7d-11ea-8499-58696edc188d.PNG)
+![](/public/assets/img/Capture001.PNG)
 
 Enter a burger
-![Capture002](https://user-images.githubusercontent.com/55810138/74109660-24494c00-4b7d-11ea-8c3f-7c4c781a04a6.PNG)
+![](/public/assets/img/Capture002.PNG)
 
 Burger appears on the "to devour list"
-![Capture003](https://user-images.githubusercontent.com/55810138/74109662-31fed180-4b7d-11ea-8240-77ba009ba5cc.PNG)
+![](public/assets/img/Capture003.PNG)
 
 Clicking on "Devour" moves teh burger to the "Devoured" list
-![Capture004](https://user-images.githubusercontent.com/55810138/74109665-3a570c80-4b7d-11ea-8dfb-fd3ebac3f3b9.PNG)
+![](/public/assets/img/Capture004.PNG)
 
 
 ## Process
