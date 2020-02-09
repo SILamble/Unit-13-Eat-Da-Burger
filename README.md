@@ -33,6 +33,7 @@ NPM Installs
 
 * Express
 * Handlebars
+* Express-handlebars
 * MySQL
 
 ## Links
