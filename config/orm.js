@@ -35,11 +35,13 @@ const orm = {
     });
   },
   // An example of a MySQL line would be "UPDATE burgers SET ? WHERE ?". Here updateVal will be the devoured column, and condition will be the burger id to be updated
-  update: function(table, updateVal, condition, cb) {
-    const queryString = "UPDATE " + table;
+  update: function(table, updateVal, val, condition, cb) {
+    let queryString = "UPDATE " + table;
 
     queryString += " SET ";
     queryString += updateVal;
+    queryString += " = ";
+    queryString += val
     queryString += " WHERE ";
     queryString += condition;
 
@@ -55,5 +57,5 @@ const orm = {
 
 };
 
-
+// UPDATE burgers SET devoured = true WHERE id = 7
 module.exports = orm;

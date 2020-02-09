@@ -14,8 +14,8 @@ const burger = {
         });
     },
     //update burgers to devoured
-    update: function (updateVal, condition, cb) {
-        orm.update("burgers", updateVal, condition, function (res) {
+    update: function (val, condition, cb) {
+        orm.update("burgers", "devoured", val, condition, function (res) {
             cb(res);
         });
     }

@@ -28,9 +28,9 @@ router.post("/api/burgers", function(req, res) {
 //Update a burger to be devoured (see model for "update" function)
 router.put("/api/burgers/:id", function(req, res) {
   const condition = "id = " + req.params.id;
-  burger.update({
-    devoured: true
-  }, condition, function(result) {
+  const val = "true";
+  console.log(val)
+  burger.update(val, condition, function(result) {
     if (result.changedRows == 0) {
       return res.status(404).end();
     } else {
